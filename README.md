@@ -1,4 +1,5 @@
-':log info "start download all_cn_cidr.rsc ..."
+'''
+:log info "start download all_cn_cidr.rsc ..."
 /tool fetch http-method=get url=https://goodffd.github.io/tool/all_cn_cidr.rsc
 :log info "all_cn_cidr.rsc downloaded."
 /file {
@@ -10,4 +11,5 @@
     /import file=all_cn_cidr.rsc
     :log info "CN address list updated!"
   }
-}'
+}
+'''
